@@ -1,1 +1,1 @@
-# Moneyball-Thesis
+# Moneyball

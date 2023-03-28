@@ -11,6 +11,8 @@ Pappalardo, L., Cintia, P., Rossi, A. et al. A public data set of spatio-tempora
 
 Data source: publicly available on https://figshare.com/collections/Soccer_match_event_dataset/4415000/2
 
-Tom Decroos, Lotte Bransen, Jan Van Haaren, and Jesse Davis. Actions speak louder than goals: Valuing player actions in soccer. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, pp. 1851-1861. 2019.
+Tom Decroos, Lotte Bransen, Jan Van Haaren, and Jesse Davis. Actions speak louder than goals: Valuing player actions in soccer. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, pp. 1851-1861. 2019. ([Pdf](https://dl.acm.org/doi/10.1145/3292500.3330758))
 
-Maaike Van Roy, Pieter Robberechts, Tom Decroos, and Jesse Davis. Valuing on-the-ball actions in soccer: a critical comparison of XT and VAEP. In Proceedings of the AAAI-20 Workshop on Artifical Intelligence in Team Sports. AI in Team Sports Organising Committee, 2020.
+
+Maaike Van Roy, Pieter Robberechts, Tom Decroos, and Jesse Davis. Valuing on-the-ball actions in soccer: a critical comparison of XT and VAEP. In Proceedings of the AAAI-20 Workshop on Artifical Intelligence in Team Sports. AI in Team Sports Organising Committee, 2020.([Pdf](https://kuleuven.limo.libis.be/discovery/search?query=any,contains,lirias2913207&tab=LIRIAS&search_scope=lirias_profile&vid=32KUL_KUL:Lirias&foolmefull=1))
+

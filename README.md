@@ -32,7 +32,7 @@ Lastly, in order to guarantee the robustness of the analysis, only players who p
 
 # Results
 
-| League         | VAEP    | Salary (€)   | VAEP/Salary*    | VAEP    | Salary (€)   | VAEP/Salary*    |
+| League         | VAEP   | Salary (€)   | VAEP/Salary*   | VAEP   | Salary (€)   | VAEP/Salary*   |
 | -------------- | -------| ------------ | -------------- | -------| ------------ | -------------- |
 | Serie A        | 6.3391 | 1,841,762    | 0.0718         | 14.0764| 3,285,049    | 0.0871         |
 | Premier League | 6.7597 | 3,336,689    | 0.0264         | 16.2445| 5,650,612    | 0.0406         |
@@ -46,8 +46,8 @@ Strikers are the most cost-effective option for clubs in all leagues.
 
 ### Possible line-up for Premier League.
 
-|     | Player         | Age | Position    | Team         | VAEP rating | VAEP    | Salary in €   | VAEP/Salary |
-| --- | --------------| --- | -----------| ------------| -----------|--------| --------------| ----------- |
+|     | Player         | Age | Position   | Team         | VAEP rating | VAEP   | Salary in €   | VAEP/Salary |
+| --- | -------------- | --- | -----------| ------------ | ----------- |--------| --------------| ----------- |
 | 1   | M. Ryan        | 25  | Goalkeeper | Brighton     | 0.7411      | 29.8076| 2,074,799     | 0.1437      |
 | 2   | J. Kenny       | 20  | Defender   | Everton      | 0.2898      | 5.4768 | 889,199       | 0.0616      |
 | 3   | A. Mawson      | 23  | Defender   | Swansea      | 0.2656      | 10.7233| 1,481,999     | 0.0724      |

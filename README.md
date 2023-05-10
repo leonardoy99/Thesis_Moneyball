@@ -36,7 +36,6 @@ Lastly, in order to guarantee the robustness of the analysis, only players who p
 # Results
 
 ### Best defenders and forwards in the Premier League
-
 |     | Player          | Position | Team          | VAEP rating |
 | --- | ----------------| -------- | --------------| ----------- |
 | 1   | P. Van Aanholt  | Defender | Crystal Palace| 0.5978      |

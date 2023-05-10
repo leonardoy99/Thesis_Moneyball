@@ -4,17 +4,23 @@ The aim of this research is to examine whether there is supporting evidence for 
 To address the goal of the study, we attempt to measure player performance by using the VAEP (Valuing Actions by Estimating Probabilities) framework. Estimates of the probability of scoring and conceding a goal are computed after each action, thus assigning an individual contribution to each player. In this regard, actions are represented through Atomic-SPADL (Soccer Player Action Description Language), which describes each of them as a set of features. Then probabilities are estimated by a classification model trained on past matches.
 Finally, we present a comparison between the most impactful defenders and forwards in the 5 major European football leagues according to our model, along with an overview of the efficiency of players playing in these two positions.
 
-#Data
+# Data
 We utilize data about salaries and matches of the top 5 European football leagues for the 2017/2018 season, as well as matches of Euro 2016 and the 2018 World Cup. 
 Specifically, the leagues are: 
-    * Serie A (Italy)
-    * Premier League (England)
-    * La Liga (Spain)
-    * Bundesliga (Germany)
-    * Ligue 1 (France)
-    * UEFA Euro 2016 (International)
-    * FIFA World Cup 2018 (International)
-Information regarding player salaries has been scraped from ( ([Capology](https://www.capology.com/))).
+* Serie A (Italy)
+* Premier League (England)
+* La Liga (Spain)
+* Bundesliga (Germany)
+* Ligue 1 (France)
+* UEFA Euro 2016 (International)
+* FIFA World Cup 2018 (International)
+Information regarding player salaries has been scraped from ([Capology](https://www.capology.com/)).
+
+# Experimental Choiches
+To proceed with the main idea of the thesis, the first step involved checking whether there was a significant difference in the salaries between forwards and defenders. The hypothesis was tested using a t-test, in which $H_0$, the null, stated that the true difference between the means of these groups was zero.
+Given the limited resources available to us, only salary and match data from 2017/18 were used for the analysis. Euro 2016 and World Cup 2018 were included just in the training phase of the models since data on previous seasons of each league were not available. Training on a sub-sample of the current season instead, would have significantly affected the analysis. Indeed, by excluding part of the games played, the overall contribution of many players during the season would have changed dramatically, depending on the games included in the training/test set. These design choices were made in order to ensure the correctness of the analysis during the whole season.
+Of the 115 matches from Euro 2016 and World Cup 2018, 70\% were used to train the models, while the remaining 30\% were used as a test set to evaluate the performances. The model performing the best was then retrained on all 115 matches before being applied to unseen matches from the five leagues. 
+Lastly, in order to guarantee the robustness of the analysis, only players who played at least half of the available games were considered in the final analysis (19 out of 38 matches, i.e 1.710 minutes). Otherwise, footballers playing just a few games but with great performances would have inflated statistics compared to players who were more consistent throughout the season.
 
 
 # References

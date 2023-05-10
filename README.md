@@ -6,17 +6,15 @@ Finally, we present a comparison between the most impactful defenders and forwar
 
 #Data
 We utilize data about salaries and matches of the top 5 European football leagues for the 2017/2018 season, as well as matches of Euro 2016 and the 2018 World Cup. 
-Specifically, the leagues are: \begin{itemize}
-    \item Serie A (Italy)
-    \item Premier League (England)
-    \item La Liga (Spain)
-    \item Bundesliga (Germany)
-    \item Ligue 1 (France)
-    \item UEFA Euro 2016 (International)
-    \item FIFA World Cup 2018 (International)
-\end{itemize} 
-
-Information regarding player salaries has been scraped from \cite{salary}.
+Specifically, the leagues are: 
+    * Serie A (Italy)
+    * Premier League (England)
+    * La Liga (Spain)
+    * Bundesliga (Germany)
+    * Ligue 1 (France)
+    * UEFA Euro 2016 (International)
+    * FIFA World Cup 2018 (International)
+Information regarding player salaries has been scraped from ( ([Capology](https://www.capology.com/))).
 
 
 # References

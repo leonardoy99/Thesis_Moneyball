@@ -1,10 +1,9 @@
 # Attack wins you games, defence wins you titles. A Moneyball approach to assess the importance of defenders in football. 
 
 The aim of this research is to examine whether there is supporting evidence for the importance of defensive players in football compared to offensive ones, and then assess if the salary market efficiently rewards their performances. 
+To win a game, not conceding a goal is as important as scoring one. Nonetheless, there is a well-established tradition in football in which forwards tend to be valued much more than defenders, as witnessed by the high transfer fees paid for them in the modern era. 
 
-To win a game, not conceding a goal is as important as scoring one. Nonetheless, there is a well-established tradition in football in which forwards tend to be valued much more than defenders, as witnessed by the high transfer fees paid for them in the modern era. Many great strikers have easily exceeded the 100 million euros threshold, with the record set by Neymar's transfer to Paris Saint-Germain for 222 million euros in 2017. Despite recent price increases, defenders are still far from these amounts. Virgil van Dijk's transfer to Liverpool in 2018 for 84.5 million euros was a record-breaking purchase for the category in recent years and yet much criticized by the media. 
-
-To address the goal of the study, we attempt to measure player performance by using the VAEP (Valuing Actions by Estimating Probabilities) framework. Estimates of the probability of scoring and conceding a goal are computed after each action, thus assigning an individual contribution to each player. In this regard, actions are represented through Atomic-SPADL (Soccer Player Action Description Language), which describes each of them as a set of features. Then probabilities are estimated by a classification model trained on past matches.
+To address the goal of the study, we attempt to measure player performance by using the VAEP (Valuing Actions by Estimating Probabilities) framework.
 Finally, we present a comparison between the most impactful defenders and forwards in the 5 major European football leagues according to our model, along with an overview of the efficiency of players playing in these two positions.
 
 # Data
@@ -21,6 +20,10 @@ Specifically, the leagues are:
 
 Information regarding player salaries has been scraped from ([Capology](https://www.capology.com/)).
 
+# Methodology
+
+The main assumption of VAEP is that all actions in football are performed to increase the probabilities of scoring a goal or decrease the chance of conceding one. Therefore it values an action by estimating the change in these probabilities. These estimates are computed after each action, thus assigning an individual contribution to each player. In this regard, actions are represented through Atomic-SPADL (Soccer Player Action Description Language), which describes each of them as a set of features. Then probabilities are estimated by a classification model trained on past matches. Several models were trained, but Catboost was preferred due to  his faster training time and ability to deal with categorical features.
+
 # Experimental Choiches
 To proceed with the main idea of the thesis, the first step involved checking whether there was a significant difference in the salaries between forwards and defenders. The hypothesis was tested using a t-test, in which $H_0$, the null, stated that the true difference between the means of these groups was zero.
 
@@ -32,6 +35,25 @@ Lastly, in order to guarantee the robustness of the analysis, only players who p
 
 # Results
 
+### Best defenders and forwards in the Premier League
+
+|     | Player          | Position | Team          | VAEP rating |
+| --- | ----------------| -------- | --------------| ----------- |
+| 1   | P. Van Aanholt  | Defender | Crystal Palace| 0.5978      |
+| 2   | L. Koscielny    | Defender | Arsenal       | 0.4349      |
+| 3   | N. Monreal      | Defender | Arsenal       | 0.4159      |
+| 4   | M. Alonso       | Defender | Chelsea       | 0.3933      |
+| 5   | D. Janmaat      | Defender | Watford       | 0.3687      |
+
+|     | Player      | Position | Team        | VAEP rating |
+| --- | ------------| -------- | ----------- | ----------- |
+| 1   | M. Salah    | Forward  | Liverpool   | 1.1180      |
+| 2   | S. Agüero   | Forward  | Man. City   | 1.1020      |
+| 3   | H. Kane     | Forward  | Tottenham   | 0.9054      |
+| 4   | G. Jesus    | Forward  | Man. City   | 0.905392    |
+| 5   | A. Martial  | Forward  | Man. United | 0.8526      |
+
+### Summary over all leagues
 | League         | VAEP   | Salary (€)   | VAEP/Salary*   | VAEP   | Salary (€)   | VAEP/Salary*   |
 | -------------- | -------| ------------ | -------------- | -------| ------------ | -------------- |
 | Serie A        | 6.3391 | 1,841,762    | 0.0718         | 14.0764| 3,285,049    | 0.0871         |
@@ -43,6 +65,7 @@ Lastly, in order to guarantee the robustness of the analysis, only players who p
 *VAEP/Salary is computed as a measure of efficiency and multiplied by 10^4.
 
 Strikers are the most cost-effective option for clubs in all leagues.
+
 
 ### Possible line-up for Premier League.
 

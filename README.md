@@ -1,7 +1,22 @@
 # Attack wins you games, defence wins you titles. A Moneyball approach to assess the importance of defenders in football. 
-The aim of this research is to examine whether there is supporting evidence for the importance of defensive players in football compared to offensive ones, and then assess if the salary market efficiently rewards their performances. To win a game, not conceding a goal is as important as scoring one. Nonetheless, there is a well-established tradition in which forwards tend to be valued much more than defenders.
-To address the goal of the study, we attempt to measure player performance by using the VAEP (Valuing Actions by Estimating Probabilities) framework. Estimates of the probability of scoring and conceding a goal are computed after each action, thus assigning an individual contribution to each player. In this regard, actions are represented through SPADL (Soccer Player Action Description Language), which describes each of them as a set of features. Then probabilities are estimated by a classification model trained on past matches.
+"Attack wins you games, defense wins you titles." is a famouse quote from Sir Alex Ferguson which emphasizes that having a strong attack is important, but having a solid defense is even more crucial to winning championships or achieving long-term success. 
+The aim of this research is to examine whether there is supporting evidence for the importance of defensive players in football compared to offensive ones, and then assess if the salary market efficiently rewards their performances. To win a game, not conceding a goal is as important as scoring one. Nonetheless, there is a well-established tradition in football in which forwards tend to be valued much more than defenders, as witnessed by the high transfer fees paid for them in the modern era. Many great strikers have easily exceeded the 100 million euros threshold, with the record set by Neymar's transfer to Paris Saint-Germain for 222 million euros in 2017. Despite recent price increases, defenders are still far from these amounts. Virgil van Dijk's transfer to Liverpool in 2018 for 84.5 million euros was a record-breaking purchase for the category in recent years and yet much criticized by the media. 
+To address the goal of the study, we attempt to measure player performance by using the VAEP (Valuing Actions by Estimating Probabilities) framework. Estimates of the probability of scoring and conceding a goal are computed after each action, thus assigning an individual contribution to each player. In this regard, actions are represented through Atomic-SPADL (Soccer Player Action Description Language), which describes each of them as a set of features. Then probabilities are estimated by a classification model trained on past matches.
 Finally, we present a comparison between the most impactful defenders and forwards in the 5 major European football leagues according to our model, along with an overview of the efficiency of players playing in these two positions.
+
+#Data
+We utilize data about salaries and matches of the top 5 European football leagues for the 2017/2018 season, as well as matches of Euro 2016 and the 2018 World Cup. 
+Specifically, the leagues are: \begin{itemize}
+    \item Serie A (Italy)
+    \item Premier League (England)
+    \item La Liga (Spain)
+    \item Bundesliga (Germany)
+    \item Ligue 1 (France)
+    \item UEFA Euro 2016 (International)
+    \item FIFA World Cup 2018 (International)
+\end{itemize} 
+
+Information regarding player salaries has been scraped from \cite{salary}.
 
 
 # References

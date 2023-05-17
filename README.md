@@ -16,8 +16,8 @@ Specifically, the leagues are:
 * Ligue 1 (France)
 * UEFA Euro 2016 (International)
 * FIFA World Cup 2018 (International)
-Match-event data are publicily available thanks to ([Pappalardo, Luca; Massucco, Emanuele (2019)](https://doi.org/10.6084/m9.figshare.c.4415000)).
 
+Match-event data are publicily available thanks to ([Pappalardo, Luca; Massucco, Emanuele (2019)](https://doi.org/10.6084/m9.figshare.c.4415000)).
 Information regarding player salaries has been scraped from ([Capology](https://www.capology.com/)).
 
 # Methodology

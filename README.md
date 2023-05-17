@@ -1,7 +1,7 @@
 # Attack wins you games, defence wins you titles. A Moneyball approach to assess the importance of defenders in football. 
 
-The aim of this research is to examine whether there is supporting evidence for the importance of defensive players in football compared to offensive ones, and then assess if the salary market efficiently rewards their performances. 
-\n To win a game, not conceding a goal is as important as scoring one. Nonetheless, there is a well-established tradition in football in which forwards tend to be valued much more than defenders, as witnessed by the higher salaries and transfer fees paid for them in the modern era. 
+The aim of this research is to examine whether there is supporting evidence for the importance of defensive players in football compared to offensive ones, and then assess if the salary market efficiently rewards their performances. '\n'
+To win a game, not conceding a goal is as important as scoring one. Nonetheless, there is a well-established tradition in football in which forwards tend to be valued much more than defenders, as witnessed by the higher salaries and transfer fees paid for them in the modern era. 
 
 To address the goal of the study, we attempt to measure player performance by using the VAEP (Valuing Actions by Estimating Probabilities) framework.
 \n Finally, we present a comparison between the most impactful defenders and forwards in the 5 major European football leagues according to our model, along with an overview of the efficiency of players playing in these two positions.
@@ -30,7 +30,7 @@ Given the limited resources available to us, only salary and match data from 201
 
 Of the 115 matches from Euro 2016 and World Cup 2018, 70\% were used to train the models, while the remaining 30\% were used as a test set to evaluate the performances. The model performing the best was then retrained on all 115 matches before being applied to unseen matches from the five leagues. 
 
-Lastly, in order to guarantee the robustness of the analysis, only players who played at least half of the available games were considered in the final analysis (19 out of 38 matches, i.e 1.710 minutes). Otherwise, footballers playing just a few games but with great performances would have inflated statistics compared to players who were more consistent throughout the season.
+Lastly, to enable comparison between players, the final VAEP rating is computed by normalizing the total VAEP value of a player for the minutes he played. In order to guarantee robustness, only players who played at least half of the available games were considered in the final analysis (19 out of 38 matches, i.e 1.710 minutes). Otherwise, footballers playing just a few games but with great performances would have inflated statistics compared to players who were more consistent throughout the season.
 
 # Results
 
@@ -94,6 +94,7 @@ Indeed, the model has a clear and strong bias toward forwards, at the expense of
 Therefore, given the current state of the art of football data, it is unfair to compare players across different roles. We acknowledge that results across roles are not reliable, but, by comparing players within a role and relating performance to salary, the model can provide useful indications. Indeed, for each league, it is able to build a competitive lineup on a low budget and to discover many footballers who have become key players in the years following the season taken into consideration.
 
 This research contributes to literature review and the current state of football analytics by emphasizing the need for more comprehensive data collection that capture a wider range of in-game actions.
+
 # References
 Pappalardo, Luca; Massucco, Emanuele (2019): Soccer match event dataset. figshare. Collection. https://doi.org/10.6084/m9.figshare.c.4415000
 

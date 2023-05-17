@@ -1,10 +1,10 @@
 # Attack wins you games, defence wins you titles. A Moneyball approach to assess the importance of defenders in football. 
 
 The aim of this research is to examine whether there is supporting evidence for the importance of defensive players in football compared to offensive ones, and then assess if the salary market efficiently rewards their performances. 
-To win a game, not conceding a goal is as important as scoring one. Nonetheless, there is a well-established tradition in football in which forwards tend to be valued much more than defenders, as witnessed by the high transfer fees paid for them in the modern era. 
+\n To win a game, not conceding a goal is as important as scoring one. Nonetheless, there is a well-established tradition in football in which forwards tend to be valued much more than defenders, as witnessed by the higher salaries and transfer fees paid for them in the modern era. 
 
 To address the goal of the study, we attempt to measure player performance by using the VAEP (Valuing Actions by Estimating Probabilities) framework.
-Finally, we present a comparison between the most impactful defenders and forwards in the 5 major European football leagues according to our model, along with an overview of the efficiency of players playing in these two positions.
+\n Finally, we present a comparison between the most impactful defenders and forwards in the 5 major European football leagues according to our model, along with an overview of the efficiency of players playing in these two positions.
 
 # Data
 We utilize data about salaries and matches of the top 5 European football leagues for the 2017/2018 season, as well as matches of Euro 2016 and the 2018 World Cup. 
@@ -16,7 +16,6 @@ Specifically, the leagues are:
 * Ligue 1 (France)
 * UEFA Euro 2016 (International)
 * FIFA World Cup 2018 (International)
-
 
 Information regarding player salaries has been scraped from ([Capology](https://www.capology.com/)).
 
